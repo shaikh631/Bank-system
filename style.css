@@ -2,6 +2,14 @@
     margin: 0px;
     padding: 0px;
      /* font-family: 'Poppins', sans-serif;  */
+    
+}
+a{
+    text-align: none;
+     margin-left: 20px;
+    font-size: 18px;
+    color: #072113;
+    text-decoration: none;
 }
 body{
 background:linear-gradient(to bottom,#52796fff,white);
@@ -82,6 +90,7 @@ h3{
   border-radius: 8px; /* Rounded corners */
   padding: 10px 20px;
   cursor: pointer;
+  color: #ffffff;
   /* transition: background (0.3s ease, transform 0.1s ease); */
 }
 
@@ -552,10 +561,16 @@ outline: none;*/
 }
 
 .saving:active{
-    transform:translate(100%,0%,10%);
+    transform:translateX(40%);
    background: transparent;
    color:black;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+    a{
+        color: #0c0c0c;
+    }
 }
+
+
+
 
 
