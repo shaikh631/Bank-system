@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+
+<body>
+  <header>
+     <div class="head">
+            <h3>Nivida</h3>
+        </div>
+        <div class="nav-mobile">
+        <div class="nav_section_accont">
+        <a id="header-detail">Personal</a>
+        <a id="header-detail">NRI</a>
+        <a id="header-detail">Bussiness</a>
+        <!-- </div>  -->
+        <!-- <div class="nav_moblie-menu"> -->
+        <a id="header-detail">Resources</a>
+        <a id="header-detail">About</a>
+        <a id="header-detail">Help</a>
+        <a id="header-detail">Complaints</a>
+       <!-- </div> -->
+        <!-- <div class="nav-mobile-comp"> -->
+        <a id="header-detail"><i class="fa-solid fa-phone"></i></a>
+        <a id="header-detail">+91xx xxxx xxxx</a>
+        <a id="header-detail"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a id="header-detail"><i class="fa-light fa-heart"></i></a>
+        <button id="login_button"><a href="login.html" class="button" style="color: white;">Log In</a></button>
+
+
+         <!-- <a href="login.html" class="button">Log In</a> -->
+    </div>
+        </div>
+    </header>
+ <main> 
+        <div class="container" id="container">
+            <div class="form-container sign-up">
+                <form>
+                    <h1>Create Account</h1>
+          <span>Enter Email</span>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>Sign up</button>
+                </form>
+            </div>
+             <div class="form-container sign-in">
+                <form>
+                    <h1>Sign In</h1>
+                    <span>Enter Username</span>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <a href="#">Forget Password</a>
+                    <button>Sign In</button>
+                </form>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Welcome Back</h1>
+                        <p>Enter your personal detail to used <br> Banking system</p>
+                        <button class="hidden" id="login">Sign In </button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Hello, Friend !</h1>
+                        <p>Resigter your Detail </p>
+                        <button class="hidden" id="register">Sign Up </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="login.js"></script>
+</body>
+
+</html>
