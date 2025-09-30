@@ -571,6 +571,127 @@ outline: none;*/
 }
 
 
+/* fotter */
+
+
+.foot-panal1{
+    height: 80px;
+    width: 100%;
+    background-color: #374753;
+    color:#ffff;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+.foot-panal2{
+    height: 550px;
+    width: 100%;
+    background-color: #222f3d;
+    color: #ffff;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 80px;
+}
+ul p{
+    font-size:20px;
+    font-weight: 200px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+ul a{
+    display: block;
+    font-weight: 100px;
+    color: #dddd;
+    margin-top: 15px;
+
+}
+.foot-panal3{
+    background-color: #222f3d;
+    color: white;
+   
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.2px solid #bfbed9dd;
+    
+}
+.logo-ft{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height: 70px;
+    width: 120px;
+}
+.lang,.conty{
+    background-color: #222f3d;
+    color: white;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+   border-radius: 5px;
+   margin: 5px;
+
+} 
+.lang{
+    margin-left: 150px;
+    width: 150px;
+}
+.foot-panal4{
+    height: 200px;
+    width: 100%;
+    background-color: #131A22;
+    color: white;
+    display: flex;
+    font-size: small;
+    justify-content:center; 
+    align-items: center;
+    align-content: center;
+    flex-wrap:wrap;
+ 
+}
+.service-description{
+    color: #cccc;
+    font-size: 0.8rem;
+
+}
+.service{
+    height: 70px;
+    width: 20%;    
+}
+.mar{
+    margin-left: 100px;
+}
+.foot-panal5{
+    height: 150px;
+    width: 100%;
+    background-color: #131A22;
+    align-content: center;
+    /* display: flex;
+    justify-content: center; */
+    align-items: center;
+    color: white;
+    font-size: 0.9rem;
+}
+.ft-first{
+    display: flex;
+    justify-content: center;
+}
+.foot-panal5 a{
+    margin: 10px;
+}
+.foot-panal5 p{
+    /* align-items: center;
+    align-content: center; */
+    display: flex;
+   justify-content: center;
+}
+
+
 
 
 
