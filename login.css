@@ -1,4 +1,10 @@
-
+*{
+    margin: 0px;
+    padding: 0px 0px 0px 0px ;
+     /* font-family: 'Poppins', sans-serif;  */
+     
+    
+}
 header{
     height: 80px;
     width: 100%;
@@ -6,21 +12,13 @@ header{
       background: linear-gradient(to bottom, #94bc93, #588157);
      box-shadow: 0 0 10px 10px rgba(0,0,0,0.6);
     display: flex;
-     justify-content: space-between;
-    /* justify-items: flex-start; */
-    /* padding-right: 0.5rem;  */
+    /* /* justify-content: center; */
+    padding-right: 0.5rem; 
     /* /* margin-top: 0px; */
     position: sticky;
     top: 0px;
     
 }
-body{
-background-color: #dad7cd;
-/* color: #ffffff; */
-
- /* background-image: url("right.jpg"); */
-/* } 
-
 .head{
     margin-top: 5px;
     margin-left: 15rem ;
@@ -28,11 +26,10 @@ background-color: #dad7cd;
 h3{
     height: 5rem;
     width: 10rem;
-    /* font-size: 3rem; */
-    /* justify-content: center; */
-    /* top: 0px; */
+    font-size: 3rem;
+    justify-content: center;
+    top: 80px;
     /* margin-left: 2rem; */
-    /* display: flex; */
 }
 .nav-mobile{
     width: 100%;
@@ -45,30 +42,6 @@ h3{
     margin-left: 2rem;
     font-size: 20px;
 }
-#login_button {
-  font-family: 'Poppins', 'Segoe UI', 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 600; /* Semi-bold for emphasis */
-  letter-spacing: 0.5px; /* Slight spacing for clarity */
-  color: #ffffff; /* White text */
-  background-color: #072113; /* Teal shade for modern look */
-  border: none;
-  border-radius: 8px; /* Rounded corners */
-  padding: 10px 20px;
-  cursor: pointer;
-  color: #ffffff;
-  /* transition: background (0.3s ease, transform 0.1s ease); */
-}
-
-#login_button:hover {
-  background-color: #285e61; /* Darker teal on hover */
-  transform: scale(1.05); /* Slight grow effect */
-}
-
-#login_button:active {
-  transform: scale(0.97); /* Small shrink on click */
-}
-
 
 /* Main part of Login  */
 main{
@@ -78,7 +51,8 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 91vh;
+    height: 90.3vh;
+    width: 100%;
 }
 .container{
      background-color: #dad7cd;
@@ -170,6 +144,10 @@ main{
     left: 0px;
     width: 50%;
     z-index: 1;
+}
+.form-container span{
+    padding: 10px;
+    
 }
 .container.active .sign-up{
     transform: translateX(100%);
