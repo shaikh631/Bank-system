@@ -12,7 +12,8 @@ a{
     text-decoration: none;
 }
 body{
-background:linear-gradient(to bottom,#52796fff,white);
+background:linear-gradient(to bottom,#52796fff,#fefefe);
+ /* background: linear-gradient(to bottom,#fefefe,#dad7cd) ; */
 color: #ffffff;
  /* background-image: url("right.jpg"); */
 
@@ -35,6 +36,7 @@ header{
 .head{
     margin-top: 5px;
     margin-left: 15rem ;
+    color: #000;
 }
 h3{
     height: 5rem;
@@ -102,6 +104,48 @@ h3{
 #login_button:active {
   transform: scale(0.97); /* Small shrink on click */
 }
+
+.above-main-con{
+ height: auto;
+    width: auto;
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+     margin-top: 20px;
+
+}
+.left-side{
+     height: 700px;
+    width: 700px;
+    background: #072113;
+     display:flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: Amplitude, Arial, Helvetica, sans-serif;;
+}
+.left-side p{
+    font-size: 3rem;
+    margin-bottom: -1rem;
+    /* box-shadow: 0px 0px 15px ,rgba(0, 0, 0, 1); */
+}
+
+.right-side{
+     height: 700px;
+    width: 650px;
+    /* background-color: #072113; */
+   background-image:url("IB_Banner.jpg");
+   background-size: cover; 
+   /* background-image: url("right.jpg"); */
+  /* box-shadow:  15px ,rgba(0, 0, 0, 1); */
+   z-index: -2;
+}
+.left-side span{
+  font-size: large;
+  font: weight 200px;
+}
+
 .main-contain{
     height: auto;
     width: auto;
@@ -368,18 +412,21 @@ a{
 }
 .container-left-holder{
     height: 100%;
-    border-radius: 100px 0;
+    border-radius: 10%;
     /* border: 1px solid green; */
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
     width: 550px;
 }
-#account-open{
+
+/* ignoring */
+#account-open{ 
     font-weight: 100;
     font-size: 50px;
     padding-left: 50px;
     padding-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .calculator{
       height: 100%;
        width:750px ;
@@ -397,6 +444,16 @@ a{
     margin-top: 40px;
     padding-top: 40px;
     padding-right: 10px;
+}
+.cal-left-input input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: green; /* Thumb color */
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #000; /* Optional border */
 }
 .cal-butt{
     height: 150px;
@@ -524,6 +581,7 @@ outline: none;*/
     /* border: 2px solid black; */
    padding-left: 30px;
    padding-top: 20px;
+   z-index: -1;
 }
 .saving{
     height: 60px;
@@ -538,6 +596,7 @@ outline: none;*/
     border-radius: 12px;
        display: inline-block;
     justify-content:center; 
+      /* z-index: -1; */
     /* justify-items: center; */
     text-align:center;
      line-height: 50px; 
@@ -548,6 +607,10 @@ outline: none;*/
     transition-timing-function: ease-in;
     transition-duration:0.6s ;
      /* transform:translateX(80%); */
+
+
+     /* issue at  active */
+       z-index: -1;
     
 }
 #inv{
@@ -569,27 +632,40 @@ outline: none;*/
         color: #0c0c0c;
     }
 }
+/* 
+. :hover{
+     background-color: transparent;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+    color:black;
+    transform: translate(3);
+} */
 
 
 /* fotter */
-
-
 .foot-panal1{
     height: 80px;
     width: 100%;
-    background-color: #374753;
-    color:#ffff;
+    /* background-color:  #011d0e; */
+      background: linear-gradient(to bottom,#fefefe,#dad7cd) ;
+    color:#141313;
     text-align: center;
     align-items: center;
     display: flex;
     justify-content: center;
     font-size: 1rem;
+    border: none;
+    box-shadow: 0px -50px 200px #dad7cd;
+    margin-top: 10rem ;
+   
 }
 .foot-panal2{
     height: 550px;
     width: 100%;
-    background-color: #222f3d;
-    color: #ffff;
+    /* background-color: #072113; */
+    /* #52796fff; */
+      /* background: linear-gradient(#dad7cd,#a3b18a) ; */
+      background: linear-gradient(#dad7cd,#52796fff);
+    color: #111010;
     display: flex;
     justify-content: space-evenly;
 }
@@ -605,12 +681,16 @@ ul p{
 ul a{
     display: block;
     font-weight: 100px;
-    color: #dddd;
+    color: #070707dd;
     margin-top: 15px;
 
 }
+ul a:hover{
+    transform:scale(1.2);
+    
+}
 .foot-panal3{
-    background-color: #222f3d;
+    background-color: #072113;
     color: white;
    
     height: 120px;
@@ -620,12 +700,7 @@ ul a{
     border-top: 0.2px solid #bfbed9dd;
     
 }
-.logo-ft{
-    background-image: url("amazon_logo.png");
-    background-size: cover;
-    height: 70px;
-    width: 120px;
-}
+/*  */
 .lang,.conty{
     background-color: #222f3d;
     color: white;
