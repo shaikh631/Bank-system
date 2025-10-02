@@ -1,7 +1,15 @@
+
+html{
+scroll-behavior: smooth;
+}
 *{
     margin: 0px;
     padding: 0px;
+    transition:all;
+    transition-timing-function: ease-in;
+    /* transition-duration:2.9s; */
      /* font-family: 'Poppins', sans-serif;  */
+   
     
 }
 a{
@@ -16,6 +24,9 @@ background:linear-gradient(to bottom,#52796fff,#fefefe);
  /* background: linear-gradient(to bottom,#fefefe,#dad7cd) ; */
 color: #ffffff;
  /* background-image: url("right.jpg"); */
+  transition:all;
+    transition-timing-function: ease-in;
+    transition-duration:1.5s ;
 
 }
 
@@ -44,6 +55,7 @@ h3{
     font-size: 3rem;
     justify-content: center;
     top: 80px;
+     transition: 2s ease-in-out;
     /* margin-left: 2rem; */
     /* display: flex; */
 }
@@ -117,13 +129,14 @@ h3{
 }
 .left-side{
      height: 700px;
-    width: 700px;
+    width: 800px;
     background: #072113;
      display:flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
-    font-family: Amplitude, Arial, Helvetica, sans-serif;;
+    font-family: Amplitude, Arial, Helvetica, sans-serif;
+    z-index: -5;
 }
 .left-side p{
     font-size: 3rem;
@@ -133,17 +146,25 @@ h3{
 
 .right-side{
      height: 700px;
-    width: 650px;
+    width: 700px;
     /* background-color: #072113; */
    background-image:url("IB_Banner.jpg");
    background-size: cover; 
    /* background-image: url("right.jpg"); */
   /* box-shadow:  15px ,rgba(0, 0, 0, 1); */
-   z-index: -2;
+   z-index: -1;
+   transition: 1.5s ease-in-out;
+   border-radius: 20px;
+   border-top-left-radius: 100px ;
+   border-bottom-left-radius: 100px ;
+   margin-left: -100px;
+ 
 }
+
 .left-side span{
   font-size: large;
   font: weight 200px;
+  transition-duration:1.5s ;
 }
 
 .main-contain{
@@ -240,6 +261,12 @@ h3{
      /* justify-content:space-evenly; */
      /* backdrop-filter: blur(20px); */
      z-index: -10px;
+        transition:all;
+    transition-timing-function: ease-in;
+    transition-duration:0.7s ;
+    /* animation-fill-mode:forwards; */
+/* animation-delay: 5s; */
+     /* transform:translateX
    
    
      /* display: flex;
@@ -289,7 +316,9 @@ h3{
     background-size: cover; 
     align-items: center;
     margin-right: 22px ;
+
 }
+
 .hero-call-item{
     height: 50px;
     width: 27%;
@@ -548,7 +577,7 @@ outline: none;*/
     display: flex;
     height: 20px;
     width: 100%;
-    justify-content: space-between;
+    justify-content:space-between;
     margin-top:80px ;
 }
 .cal-veiw-1,.cal-veiw-2{
@@ -556,14 +585,25 @@ outline: none;*/
     width: 50px;
     border: 1px solid black; */
     display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
     background:transparent;
     height: 50px;
     width: 45%;
     border-radius: 18%;
+     text-align: center;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
 }
+.cal-veiw-1 a{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+  
+}
+.cal-veiw-2 a{
+      font-size: 16px;
+}
+
 .cal-veiw-2{
     background-color: white;
     color: #072113;
@@ -605,7 +645,10 @@ outline: none;*/
     align-items: center;
     transition:all;
     transition-timing-function: ease-in;
-    transition-duration:0.6s ;
+    transition-duration:0.5s ;
+    /* animation-fill-mode: none;
+animation-delay: 1s; */
+ transition: margin-right 2s ease-in-out;
      /* transform:translateX(80%); */
 
 
@@ -628,9 +671,10 @@ outline: none;*/
    background: transparent;
    color:black;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
-    a{
+    transition: margin-right 2s ease-in-out;
+    /* a{
         color: #0c0c0c;
-    }
+    } */
 }
 /* 
 . :hover{
@@ -683,6 +727,7 @@ ul a{
     font-weight: 100px;
     color: #070707dd;
     margin-top: 15px;
+    transition: 0.2s ease-in-out;
 
 }
 ul a:hover{
@@ -765,8 +810,3 @@ ul a:hover{
     display: flex;
    justify-content: center;
 }
-
-
-
-
-
