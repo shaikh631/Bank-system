@@ -6,16 +6,16 @@ scroll-behavior: smooth;
     margin: 0px;
     padding: 0px;
     transition:all;
-    transition-timing-function: ease-in;
-    /* transition-duration:2.9s; */
-     /* font-family: 'Poppins', sans-serif;  */
-   
+    transition-timing-function: ease-in; 
+     /* transition-duration:3s; */
+     /* font-family: 'Poppins', sans-serif;   */
+    /* box-sizing: border-box; */
     
 }
 a{
     text-align: none;
      margin-left: 20px;
-    font-size: 18px;
+    font-size: 15px;
     color: #072113;
     text-decoration: none;
 }
@@ -27,11 +27,12 @@ color: #ffffff;
   transition:all;
     transition-timing-function: ease-in;
     transition-duration:1.5s ;
+    margin-top: 0px;
 
 }
 
 header{
-    height: 80px;
+    height: 70px;
     width: 100%;
     /* background:linear-gradient(to padding-right , #588157,white); */
       background: linear-gradient(to bottom, #94bc93, #588157);
@@ -45,7 +46,7 @@ header{
     
 }
 .head{
-    margin-top: 5px;
+    margin-top: 3px;
     margin-left: 15rem ;
     color: #000;
 }
@@ -54,7 +55,7 @@ h3{
     width: 10rem;
     font-size: 3rem;
     justify-content: center;
-    top: 80px;
+    /* top: 80px; */
     
      transition: 2s ease-in-out;
     /* margin-left: 2rem; */
@@ -65,11 +66,11 @@ h3{
     justify-content: center;
     /* gap: 5rem; */
     margin-left: 2rem;
-    margin-top: 1.4rem;
+    margin-top: 1rem;
 }
 #header-detail{
     margin-left: 2rem;
-    font-size: 20px;
+    font-size: 18px;
    transition: 2s ease-in-out;
 }
 
@@ -100,7 +101,7 @@ h3{
 #login_button {
   font-family: 'Poppins', 'Segoe UI', 'Roboto', sans-serif;
   font-size: 16px;
-  font-weight: 600; /* Semi-bold for emphasis */
+  font-weight: 500; /* Semi-bold for emphasis */
   letter-spacing: 0.5px; /* Slight spacing for clarity */
   color: #ffffff; /* White text */
   background-color: #072113; /* Teal shade for modern look */
@@ -110,6 +111,10 @@ h3{
   cursor: pointer;
   color: #ffffff;
   /* transition: background (0.3s ease, transform 0.1s ease); */
+}
+.nav_section_accont :hover{
+    text-decoration: underline black;
+    transform:scale(20px)
 }
 
 #login_button:hover {
@@ -147,7 +152,7 @@ h3{
 .left-side p{
     font-size: 3rem;
     margin-bottom: -1rem;
-    /* box-shadow: 0px 0px 15px ,rgba(0, 0, 0, 1); */
+    box-shadow: 0px 0px 15px ,rgba(0, 0, 0, 1);
 }
 
 .right-side{
@@ -166,9 +171,49 @@ h3{
    margin-left: -100px;
  
 }
+/* .animation {
+  view-timeline: --subject-reveal block;
+  animation-timeline: --subject-reveal;
+
+  animation-name: appear;
+  animation-range: entry 10% contain 25%;
+  animation-fill-mode: both;
+  animation-duration: 1ms; /* Firefox requires this to apply the animation */
+/* } */ 
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+.above-main-con-msg{
+     height: 100px;
+    width: 1400px;
+    background-color: #285e61;
+   
+     display:flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+      z-index: -1;
+        margin-top: -2%;
+        border-radius: 50px;
+   transition: 4s ease-in-out;
+  
+   /* border-radius: 20px;
+   border-top-left-radius: 100px ;
+   border-bottom-left-radius: 100px ;
+   margin-left: -100px; */
+}
 
 .left-side span{
-  font-size: large;
+  font-size: 20px;
   font: weight 200px;
   transition-duration:1.5s ;
 }
@@ -206,11 +251,25 @@ h3{
     height: 700px;
     width: 750px;
     /* background-color: #072113; */
-   background-image:url("right.jpg");
+   /* background-image:url("right.jpg"); */
    background-size: cover; 
    /* background-image: url("right.jpg"); */
   box-shadow: 0px 0px 15px ,rgba(0, 0, 0, 1);
    z-index: -2;
+}
+ #image-container {
+    width: 400px; /* Set a fixed width for the container */
+    height: 300px; /* Set a fixed height for the container */
+    border: 5px solid #333;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Hide anything outside the container */
+}
+
+#slideshow-image {
+    width: 100%; /* Make the image fill the container width */
+    height: 100%; /* Make the image fill the container height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    transition: opacity 1s ease-in-out; /* Optional: adds a fade effect */
 }
 .left-section-search{
     border-radius: 35px;
@@ -404,6 +463,7 @@ a{
     /* margin-right: -40%; */
      box-shadow: 0 0px 25px rgba(230, 230, 229, 2);
      z-index: 2;
+     animation: 2s linear 0s infinite slide-in;
 
 }
 .section-bar-serives{
@@ -466,7 +526,7 @@ a{
       height: 100%;
        width:750px ;
     /* border: 2px solid yellow; */
-    border-radius: 9%;
+    border-radius: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -691,6 +751,121 @@ animation-delay: 1s; */
 } */
 
 
+/* card */
+/* .card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* box-sizing: border-box; */
+/* } */
+/* .box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style:preserve-3d ;
+    animation: animate 20s linear infinite;
+
+}
+@keyframes animate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+         transform: perspective(1000px) rotateY(360deg);
+    }
+} */
+/* .box span{
+    position: absolute;
+      top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(cal(var(--i)*45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px
+    linear-grading(transparent,transparent, black);
+} */
+/* 
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 18px;
+    height: 100%;
+    object-fit: cover;
+
+}  */
+
+
+/* card */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    margin-top: 90px;
+    margin-bottom: -90px;
+
+    z-index: -1;
+    /* min-width: 130vh; */
+    /* box-sizing: border-box; */
+}
+
+.box {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: animate 25s linear infinite;
+       z-index: -1;
+}
+
+@keyframes animate {
+    0% {
+        -webkit-transform: perspective(1000px) rotateY(0deg);
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        -webkit-transform: perspective(1000px) rotateY(360deg);
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    
+    /* *** CORRECTED LINE ***
+       Changed 'cal' to 'calc' and added prefixes.
+    */
+    -webkit-transform: rotateY(calc(var(--i) * 45deg)) translateZ(470px);
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(470px);
+
+    /* Removed extra semicolon after 'black)' */
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, black);
+    box-reflect: below 0px linear-gradient(transparent, transparent, black); 
+}
+
+.box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid rgb(232, 232, 232);
+    box-shadow:0 5px 5px #000000; 
+    border-radius: 18px;
+    height: 90%;
+    object-fit: cover;
+}
 /* fotter */
 .foot-panal1{
     height: 80px;
@@ -706,6 +881,7 @@ animation-delay: 1s; */
     border: none;
     box-shadow: 0px -50px 200px #dad7cd;
     margin-top: 10rem ;
+    
    
 }
 .foot-panal2{
@@ -806,6 +982,12 @@ ul a:hover{
 .ft-first{
     display: flex;
     justify-content: center;
+     color: white;
+}
+.ft-first a{
+    /* display: flex;
+    justify-content: center; */
+     color: white;
 }
 .foot-panal5 a{
     margin: 10px;
@@ -815,4 +997,5 @@ ul a:hover{
     align-content: center; */
     display: flex;
    justify-content: center;
+    color: white;
 }
