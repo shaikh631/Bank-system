@@ -1,0 +1,445 @@
+
+html{
+scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    /* transition:all;
+    transition-timing-function: ease-in;  */
+     /* transition-duration:3s; */
+     /* font-family: 'Poppins', sans-serif;   */
+    /* box-sizing: border-box; */
+    
+}
+a{
+    text-align: none;
+     margin-left: 20px;
+    font-size: 15px;
+    color: #072113;
+    text-decoration: none;
+  
+}
+body{
+background:linear-gradient(to bottom,#52796fff,#fefefe);
+ /* background: linear-gradient(to bottom,#fefefe,#dad7cd) ; */
+color: #ffffff;
+ /* background-image: url("right.jpg"); */
+  /* transition:all;
+    transition-timing-function: ease-in;
+    transition-duration:1.5s ; */
+    margin-top: 0px;
+    /* font-family: 'Inter', sans-serif; */
+    /* line-height: 1.6; */
+    min-height: 100vh;
+     min-width: 99.9vh;
+
+
+}
+
+header{
+    height: 70px;
+    width: 100%;
+    /* background:linear-gradient(to padding-right , #588157,white); */
+      background: linear-gradient(to bottom, #94bc93, #588157);
+     box-shadow: 0 0 10px 10px rgba(0,0,0,0.6);
+    display: flex;
+    /* /* justify-content: center; */
+    padding-right: 0.5rem; 
+    /* /* margin-top: 0px; */
+    position: sticky;
+    top: 0px;
+    
+}
+.head{
+    margin-top: 3px;
+    margin-left: 15rem ;
+    color: #000;
+}
+h3{
+    height: 5rem;
+    width: 10rem;
+    font-size: 3rem;
+    justify-content: center;
+    /* top: 80px; */
+    
+     /* transition: 2s ease-in-out; */
+    /* margin-left: 2rem; */
+    /* display: flex; */
+}
+.nav-mobile{
+    width: 100%;
+    justify-content: center;
+    /* gap: 5rem; */
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+#header-detail{
+    margin-left: 2rem;
+    font-size: 18px;
+   /* transition: 2s ease-in-out; */
+}
+
+
+
+/* General reset for the page body and main content layout
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #121212; /* Dark background for the whole page */
+    /* display: flex; /* Use flexbox to position the sidebar and main content */
+/* } */
+
+/* --- Sidebar Styling --- */
+.sidebar {
+    width: 90px; /* Adjust the width as needed */
+    height: 100vh; /* Full viewport height */
+    position: fixed; /* Keeps it in place when the user scrolls */
+    top: 0;
+    left: 0;
+    background-color: transparent; /* Very dark background for the sidebar */
+    padding-top: 20px;
+    z-index: 10; /* Ensures it stays on top of other content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:70px ; /* Center items horizontally */
+}
+
+/* Logo Styling */
+.sidebar-logo {
+    font-size: 30px; /* Size for the star placeholder */
+    color: white; 
+    margin-bottom: 30px;
+}
+
+/* Navigation List */
+.nav-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    color: #181818;/* Make the list take the full width of the sidebar */
+}
+
+/* Individual Navigation Item */
+.nav-item {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center; /* Center the icon within the item */
+    margin: 10px 0;
+    position: relative;
+    /* Optional: Add a smooth transition for hover effects */
+    transition: background-color 0.2s ease; 
+    color: beige;
+}
+
+/* Styling the active/selected item (the one with the blue box) */
+.nav-item.active {
+    /* Create the blue box effect */
+    border-left: 5px solid #040404; /* Blue line on the left */
+    background-color:#94bc93 ;
+    /* Slightly lighter background for the active state */
+  
+
+}
+
+/* Style the link/anchor tag */
+.nav-item a {
+    /* color: #999999; Grey icon color */
+
+    text-decoration: none;
+    display: block;
+    
+
+}
+
+/* Icon Styling - Replace with actual icon library if needed */
+.icon {
+    display: block;
+    width: 50px; /* Icon size */
+    height: 80px;
+    /* Placeholder for actual icons - you would typically use an icon library 
+       like Font Awesome, Material Icons, or SVG files here. */
+    background-color: #999999; 
+    border-radius: 5px; /* Just to make the placeholders visible */
+}
+
+/* Active icon should be white */
+.nav-item.active .icon,
+.nav-item.active a {
+    color: black; 
+ background-color:  #94bc93;
+  /* Make the placeholder white */
+   margin-bottom: 12px;
+}
+
+/* Hover effect */
+.nav-item:not(.active):hover {
+    cursor: pointer;
+    /* background-color:  #94bc93; */
+    /* transform: scale(1.2);ubtle background change on hover */
+}
+.nav-item a:hover{
+    transform: scale(1.5);
+    transition: 10ms ease-in-out;
+}
+
+/* --- Main Content Layout --- */
+
+.main-content {
+    /* Push the main content to the right, away from the fixed sidebar */
+    margin-left: 0px; 
+    padding: 20px;
+    flex-grow: 1; /* Allows it to take up the rest of the space */
+    /* color: white; */
+    /* margin-top: 70px; */
+    /* width: 88%; */
+    /* display: inline-flex;
+    display: flex;
+     justify-content:space-evenly;
+    justify-items: center; */
+}
+/*  */
+/* .main-content-balances p{
+    margin-top: 20px;
+    font-size: 30px;
+} */
+
+/* new thing */
+/* * Main Content */ 
+.banking-main {
+    max-width: 1400px;
+    margin: 0 auto;
+    /* padding: 2rem; */
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.section-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0d1452;
+}
+
+.date-display {
+    color: #9e9e9e;
+    font-weight: 500;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.section-header h1 {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:  black;
+}
+
+.date-display {
+    color:  #9e9e9e;
+    font-weight: 500;
+}
+ Quick Stats */
+.quick-stats {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-evenly;
+justify-content: space-evenly;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.stat-card {
+    height: 150px;
+    width: 265px;
+    background:white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow:0 4px 6px rgba(0, 0, 0, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    transition: transform 0.3s ease;
+    margin-right: 30px;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    background-color: #588157;
+      background: linear-gradient(to bottom, #94bc93, #588157);
+h3{
+    color: white;
+} 
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: #e8eaf6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #1a237e;
+}
+
+.stat-icon.income {
+    background: #e8f5e8;
+    color:#4caf50;
+}
+
+.stat-icon.expense {
+    background: #ffebee;
+    color: #f44336;
+}
+
+.stat-icon.savings {
+    background: #fff3e0;
+    color: #ff9800;
+}
+
+.stat-info h3 {
+    font-size: 0.9rem;
+    color:#aaa6a6;
+    margin-bottom: 0.5rem;
+}
+
+.stat-amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0d1452;
+    /* color: #000; */
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #f5f5f7;
+    border-radius: 3px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background:  #4caf50;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+/* Accounts Overview */
+.accounts-overview {
+    margin-bottom: 2rem;
+}
+
+.accounts-overview h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.accounts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.account-card {
+    /* background: white; */
+
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 2);
+    border-left: 12px solid  #1a237e;
+    transition: transform 0.3s ease;
+}
+
+.account-card:hover {
+    transform: translateY(-3px);
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+   background-color: #9e9e9e;
+   
+    
+}
+
+.account-card.savings {
+    border-left-color: #4caf50;
+}
+
+.account-card.investment {
+    border-left-color: #ffab00;
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.account-header h3 {
+    font-size: 1.1rem;
+    /* color:  #0d1452; */
+    color: black;
+}
+
+.account-number {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.account-balance {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0d1452;
+    margin-bottom: 1rem;
+}
+
+.account-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.performance {
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.performance.positive {
+    background: #e8f5e8;
+    color:  #4caf50;
+}
+
+.performance.negative {
+    background: #ffebee;
+    color:  #f44336;
+}
