@@ -32,6 +32,7 @@ color: #ffffff;
     margin-top: 0px;
     /* font-family: 'Inter', sans-serif; */
     /* line-height: 1.6; */
+      background: linear-gradient(to right,#dad7cd,#a3b18a) ;
     min-height: 100vh;
      min-width: 99.9vh;
 
@@ -105,7 +106,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:70px ; /* Center items horizontally */
+    margin-top:70px ;
+     transition: all 0.3s ease;
+    /* box-shadow: rgba(0, 0, 0, 1); Center items horizontally */
+   
 }
 
 /* Logo Styling */
@@ -140,7 +144,8 @@ body {
 .nav-item.active {
     /* Create the blue box effect */
     border-left: 5px solid #040404; /* Blue line on the left */
-    background-color:#94bc93 ;
+    background-color:#588157 ;
+    pointer:cursor;
     /* Slightly lighter background for the active state */
   
 
@@ -164,14 +169,15 @@ body {
     /* Placeholder for actual icons - you would typically use an icon library 
        like Font Awesome, Material Icons, or SVG files here. */
     background-color: #999999; 
-    border-radius: 5px; /* Just to make the placeholders visible */
+    border-radius: 5px;
+    pointer:cursor; /* Just to make the placeholders visible */
 }
 
 /* Active icon should be white */
 .nav-item.active .icon,
 .nav-item.active a {
-    color: black; 
- background-color:  #94bc93;
+    color:white; 
+ background-color: transparent;
   /* Make the placeholder white */
    margin-bottom: 12px;
 }
@@ -214,6 +220,7 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     /* padding: 2rem; */
+     transition: opacity 0.3s ease;
 }
 
 .section {
@@ -291,7 +298,7 @@ justify-content: space-evenly;
 
 .stat-card:hover {
     transform: translateY(-5px);
-    background-color: #588157;
+    /* background-color: #588157; */
       background: linear-gradient(to bottom, #94bc93, #588157);
 h3{
     color: white;
@@ -384,7 +391,7 @@ h3{
 .account-card:hover {
     transform: translateY(-3px);
    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
-   background-color: #9e9e9e;
+background-color: #dad7cd;
    
     
 }
@@ -442,4 +449,477 @@ h3{
 .performance.negative {
     background: #ffebee;
     color:  #f44336;
+}
+.btn-primary {
+    background: #1a237e;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #2f3e46;
+}
+
+.btn-secondary {
+    background: white;
+    color: #1a237e;
+    border: 2px solid #1a237e;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+      background: linear-gradient(to bottom, #94bc93, #588157);
+  
+    color: white;
+}
+
+.btn-text {
+    background: none;
+    border: none;
+    color: #1a237e;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Page Container */
+/* .page-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: var(--gray-medium);
+    font-size: 1.1rem;
+} */
+
+/* Grid Layouts */
+/* .bills-grid, .transfer-options, .mobile-features, .investment-options, .support-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.bill-category {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.bill-category h3 {
+    margin-bottom: 1rem;
+    color: var(--dark-blue);
+}
+
+.bill-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.bill-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.bill-item:hover {
+    background: var(--gray-light);
+}
+
+.bill-item i {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    width: 40px;
+} */
+
+/* Transfer Options */
+/* .transfer-option {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.transfer-option:hover {
+    transform: translateY(-5px);
+}
+
+.option-icon {
+    width: 80px;
+    height: 80px;
+    background:  #e8eaf6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-size: 2rem;
+    color: #1a237e;
+} */
+
+/* Forms and Filters */
+/* .statements-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid  #f5f5f7;
+    border-radius: 8px;
+} */
+
+/* Lists */
+/* .statements-list, .bills-list, .transfers-list, .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.statement-item, .bill-payment, .transfer-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.statement-actions {
+    display: flex;
+    gap: 0.5rem; */
+/* } */
+
+/* FAQ Section */
+/* .faq-item {
+    border: 1px solid  #f5f5f7;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    padding-bottom: 1.5rem;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+} */
+
+/* Profile Section */
+/* .profile-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background:#1a237e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+} */
+/* 
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid  #f5f5f7;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+} */
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.main-content > * {
+    animation: fadeInUp 0.5s ease;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .page-container {
+        padding: 1rem;
+    }
+    
+    .statements-filters {
+        flex-direction: column;
+    }
+    
+    .statement-item, .bill-payment, .transfer-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .statement-actions {
+        align-self: flex-end;
+    }
+    
+    .profile-actions {
+        flex-direction: column;
+    }
+    
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+} */
+
+
+
+/* --- Dark Mode --- */
+body.dark-mode {
+  background:#11181d ;
+  color: #eee;
+}
+/* body.dark-mode *{
+    background-color: #000;
+    color: wheat;
+} */
+
+body.dark-mode header{
+    background:#000000 ;
+    box-shadow: 0 0 10px 4px rgba(255, 255, 255, 0.5);
+    color: white;
+}
+body.dark-mode h3,
+body.dark-mode  .accounts-overview h2,
+body.dark-mode   .account-balance{
+    color: white;
+}
+
+/* body.dark-mode header, */
+body.dark-mode .sidebar {
+  background-color: transparent;
+  color: #eee;
+}
+body.dark-mode .nav-item.active, 
+body.dark-mode .icon{
+    background-color:#446074;
+}
+
+body.dark-mode .banking-main,
+/* body.dark-mode .account-card, */
+body.dark-mode .stat-card {
+  background-color: transparent ;
+  color: #fff;
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
+}
+body.dark-mode .stat-card ,
+body.dark-mode .account-card{
+    background-color: #19242b;
+}
+body.dark-mode .account-card{
+    background: linear-gradient(to bottom, #0000, #446074);
+}
+body.dark-mode .stat-card:hover{
+    background-color: #3b5465;
+          background: linear-gradient(to bottom, #22303a, #446074);
+}
+
+ /* body.dark-mode .stat-amount , */
+body.dark-mode .stat-icon {
+    color: white;
+    background-color: #2a3c48;
+}
+ body.dark-mode .section-header h1,
+ body.dark-mode .stat-amount {
+    color: white;
+ }
+
+
+/* Icon & Link adjustment */
+body.dark-mode .sidebar span,
+body.dark-mode a, 
+body.dark-mode i {
+  color: #ddd;
+}
+body.dark-mode .btn-secondary:hover {
+      background: #19242b;
+  
+    color: white;
+}
+body.dark-mode .nav-item.active{
+border-left: 8px solid #1f2426;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Basic styling for the form container */
+.transfer-container {
+    max-width: 600px;
+    margin: 40px auto; /* Centers the form */
+    padding: 30px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Styling for input groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Styling for labels */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling for inputs and selects */
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
+}
+
+/* Primary button styling */
+.btn-primary {
+    background-color: #4CAF50; /* Green color, similar to the dashboard theme */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
 }
