@@ -1,4 +1,5 @@
-/ Mode
+
+// Mode
 // 🌗 Dark Mode Toggle
 const modeToggle = document.querySelector('.Mode');
 const body = document.body;
@@ -186,6 +187,5 @@ document.getElementById('transferForm').addEventListener('submit', function(even
     });
     */
 });
-
 
 
