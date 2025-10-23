@@ -49,3 +49,31 @@ calculate(); // initial
 document.getElementById("openCalc").addEventListener("click", () => {
   document.getElementById("loanCalc").style.display = "flex";
 });
+
+
+
+
+// Mode
+// 🌗 Dark Mode Toggle
+const modeToggle = document.querySelector('.Mode');
+const body = document.body;
+
+// Check if user has a saved theme
+if (localStorage.getItem('theme') === 'dark') {
+  body.classList.add('dark-mode');
+  modeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>'; // show sun icon
+}
+
+// Toggle on click
+modeToggle.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+
+  // Save user preference
+  if (body.classList.contains('dark-mode')) {
+    localStorage.setItem('theme', 'dark');
+    modeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+  } else {
+    localStorage.setItem('theme', 'light');
+    modeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+  }
+});
