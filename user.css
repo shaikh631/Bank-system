@@ -1,5 +1,4 @@
 
-
 html{
 scroll-behavior: smooth;
 }
@@ -59,7 +58,7 @@ header{
     margin-left: 15rem ;
     color: #000;
 }
-h3{
+.head h3{
     height: 5rem;
     width: 10rem;
     font-size: 3rem;
@@ -516,7 +515,7 @@ background-color: #dad7cd;
 
 .page-header h1 {
     font-size: 2.5rem;
-    color: var(--dark-blue);
+    color: blue;
     margin-bottom: 0.5rem;
 }
 
@@ -524,9 +523,180 @@ background-color: #dad7cd;
     color: var(--gray-medium);
     font-size: 1.1rem;
 } */
+ /* Page Container */
+.page-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    /* background-color: #f8f9fa; */
+    background-color: transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Page Header */
+.page-header h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #7f8c8d;
+}
+
+/* Transfer Options */
+.transfer-options {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.transfer-option {
+    flex: 1 1 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.transfer-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.option-icon {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 15px;
+}
+
+.transfer-option h3 {
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.transfer-option p {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Quick Transfers */
+.quick-transfers {
+    margin-top: 40px;
+}
+
+.quick-transfers h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.quick-transfer-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.quick-transfer-item {
+    flex: 1 1 220px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.quick-transfer-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.contact-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+.contact-info strong {
+    display: block;
+    color: #2c3e50;
+}
+
+.contact-info span {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+}
+
+/* Recent Transfers */
+.recent-transfers {
+    margin-top: 40px;
+}
+
+.recent-transfers h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.transfers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.transfer-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 12px 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+}
+
+.transfer-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+}
+
+.transfer-info strong {
+    color: #2c3e50;
+}
+
+.transfer-info span {
+    font-size: 0.85rem;
+    color: #7f8c8d;
+}
+
+.transfer-amount span.debit {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .transfer-options, .quick-transfer-list {
+        flex-direction: column;
+    }
+}
 
 /* Grid Layouts */
-/* .bills-grid, .transfer-options, .mobile-features, .investment-options, .support-options {
+.bills-grid, .transfer-options, .mobile-features, .investment-options, .support-options {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -562,17 +732,17 @@ background-color: #dad7cd;
 }
 
 .bill-item:hover {
-    background: var(--gray-light);
+    background: gray;
 }
 
 .bill-item i {
     font-size: 1.5rem;
     color: var(--primary-blue);
     width: 40px;
-} */
+}
 
 /* Transfer Options */
-/* .transfer-option {
+.transfer-option {
     background: white;
     padding: 2rem;
     border-radius: 15px;
@@ -597,10 +767,10 @@ background-color: #dad7cd;
     margin: 0 auto 1rem;
     font-size: 2rem;
     color: #1a237e;
-} */
+}
 
 /* Forms and Filters */
-/* .statements-filters {
+.statements-filters {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
@@ -623,10 +793,10 @@ background-color: #dad7cd;
     padding: 0.75rem;
     border: 1px solid  #f5f5f7;
     border-radius: 8px;
-} */
+}
 
 /* Lists */
-/* .statements-list, .bills-list, .transfers-list, .faq-list {
+ .statements-list, .bills-list, .transfers-list, .faq-list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -644,11 +814,11 @@ background-color: #dad7cd;
 
 .statement-actions {
     display: flex;
-    gap: 0.5rem; */
-/* } */
+    gap: 0.5rem;
+}
 
-/* FAQ Section */
-/* .faq-item {
+/* FAQ Section */ 
+ .faq-item {
     border: 1px solid  #f5f5f7;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -678,10 +848,10 @@ background-color: #dad7cd;
 
 .faq-item.active .faq-question i {
     transform: rotate(180deg);
-} */
+}
 
 /* Profile Section */
-/* .profile-section {
+ .profile-section {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -705,15 +875,15 @@ background-color: #dad7cd;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background:#1a237e;
+    background:#519682;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
-} */
-/* 
+} 
+
 .profile-details {
     display: flex;
     flex-direction: column;
@@ -735,7 +905,266 @@ background-color: #dad7cd;
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
-} */
+}
+
+
+.investment-summary {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.investment-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 260px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.investment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.investment-card h3 {
+    font-size: 1.1rem;
+    color: #3949ab;
+    margin-bottom: 10px;
+}
+
+.investment-amount {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.performance {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.performance.positive {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.performance.negative {
+    background: #ffebee;
+    color: #c62828;
+}
+
+/* === Investment Options === */
+.investment-options {
+    margin-top: 20px;
+}
+
+.investment-options h3 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: #1a237e;
+    text-align: center;
+}
+
+/* === Grid Layout for Options === */
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+/* === Individual Option Cards === */
+.investment-option {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 250px;
+}
+
+.investment-option:hover {
+    transform: translateY(-5px);
+    background:  #588157;
+    color: #fff;
+}
+
+.investment-option i {
+    font-size: 2rem;
+    color: #1a237e;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.investment-option:hover i {
+    color: #fff;
+}
+
+.investment-option h4 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.investment-option p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.investment-option:hover p {
+    color: #e0e0e0;
+}
+
+
+.mobile-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    justify-items: center;
+    margin-bottom: 50px;
+}
+
+.mobile-feature {
+    background: #fff;
+    border-radius: 18px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 320px;
+}
+
+.mobile-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* === Feature Icon === */
+.feature-icon {
+    font-size: 2.5rem;
+    color: #1a237e;
+    margin-bottom: 15px;
+}
+
+.mobile-feature h3 {
+    font-size: 1.2rem;
+    color: #1a237e;
+    margin-bottom: 10px;
+}
+
+.mobile-feature p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* === Buttons === */
+.btn-primary {
+    background-color: #1a237e;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #588157;
+    transform: translateY(-2px);
+}
+
+/* === App Download Section === */
+.app-download {
+    text-align: center;
+    background: #ffffff;
+    padding: 35px 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.app-download h3 {
+    font-size: 1.4rem;
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+/* === Download Buttons === */
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-download {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #94bc93;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-download i {
+    font-size: 1.4rem;
+}
+
+.btn-download:hover {
+    background:linear-gradient(to bottom, #94bc93, #588157) ;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.6);
+}
+
+.btn-download span {
+    font-weight: 500;
+}
+
+/* === Responsive Design === */
+@media (max-width: 600px) {
+    .mobile-feature {
+        width: 90%;
+    }
+
+    .btn-primary, .btn-download {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+/* === Responsive Design === */
+@media (max-width: 600px) {
+    .investment-summary {
+        flex-direction: column;
+        align-items: center;
+    }
+    .investment-card {
+        width: 90%;
+    }
+}
 
 /* Animations */
 @keyframes fadeInUp {
@@ -754,7 +1183,7 @@ background-color: #dad7cd;
 }
 
 /* Responsive Design */
-/* @media (max-width: 768px) {
+ @media (max-width: 768px) {
     .page-container {
         padding: 1rem;
     }
@@ -781,7 +1210,7 @@ background-color: #dad7cd;
         flex-direction: column;
         text-align: center;
     }
-} */
+} 
 
 
 
@@ -858,7 +1287,7 @@ body.dark-mode .btn-secondary:hover {
     color: white;
 }
 body.dark-mode .nav-item.active{
-border-left: 8px solid #1f2426;
+border-left: 8px solid #e0e1e2;
 
 }
 
@@ -882,9 +1311,10 @@ border-left: 8px solid #1f2426;
     max-width: 600px;
     margin: 40px auto; /* Centers the form */
     padding: 30px;
-    background-color: #ffffff; /* White background */
+    /* background-color: #ffffff; White background */
+    background-color: transparent;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,1);
 }
 
 /* Styling for input groups */
@@ -895,6 +1325,7 @@ border-left: 8px solid #1f2426;
 /* Styling for labels */
 .form-group label {
     display: block;
+    margin-top: 5px;
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
@@ -922,5 +1353,62 @@ border-left: 8px solid #1f2426;
 }
 
 .btn-primary:hover {
-    background-color: #45a049;
+    background-color: pink;
 }
+
+/* Dark-Mode */
+body.dark-mode h2,
+body.dark-mode .form-group label,
+body.dark-mode h1
+{
+    color: white;
+}
+ 
+
+
+
+
+
+
+
+
+
+/* 
+.nav-item {
+    position: relative; /* Required for tooltip positioning */
+/* } */
+/* 
+.nav-item:hover::after {
+    content: attr(data-tooltip); 
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0d654c;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    height: 30px;
+    width: 60px;
+} */
+
+/* .nav-item:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+} */
+/* .nav-item:hover::before {
+    content: '';
+    position: absolute;
+    left: 50px; 
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #333 transparent transparent;
+}  */
+/* Tooltip */
